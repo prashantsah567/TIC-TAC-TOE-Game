@@ -7,7 +7,7 @@ int position = 0;
 
 void introduction() {
 
-  std::cout << "Press [Enter] to begin: ";
+  std::cout << "Press any key to begin: ";
   std::cin.ignore();
 
   std::cout << "\n";
@@ -43,7 +43,7 @@ bool is_winner() {
     winner = true;
   } else if ((board[6] == board[7]) && (board[6] == board[8]) && board[6] != " ") {
     winner = true;
-  } 
+  }
   // columns
   else if ((board[0] == board[3]) && (board[0] == board[6]) && board[0] != " ") {
     winner = true;
