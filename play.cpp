@@ -5,6 +5,16 @@ std::string board[9] = {" ", " ", " ", " ", " ", " ", " ", " ", " "};
 int player = 1;
 int position = 0;
 
+int main() {
+
+  introduction();
+  
+  take_turn();
+
+  end_game();
+    
+}
+
 void introduction() {
 
   std::cout << "Press [Enter] to begin: ";
